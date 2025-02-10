@@ -1,0 +1,49 @@
+{
+  "name": "portfolio-grid-item",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:00.438Z",
+  "updated_at": "2025-02-10T14:21:00.438Z",
+  "id": 6936516,
+  "schema": {
+    "brand_logo": {
+      "type": "asset",
+      "pos": 0,
+      "id": "1SUtbYJGQLaFcCTU_mJTcw"
+    },
+    "image": {
+      "type": "asset",
+      "pos": 1,
+      "id": "al3ZAjIOSzq76_NuZYddPg"
+    },
+    "description": {
+      "type": "text",
+      "pos": 2,
+      "id": "64uuZUloSD21Ped-_b7j_g"
+    },
+    "link_text": {
+      "type": "text",
+      "pos": 3,
+      "id": "FaOb3g3KSX6fwMZmDIvHlw"
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 4,
+      "id": "WOw80ReRSFa1HG62EFeJbA"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "portfolio-grid-item",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}

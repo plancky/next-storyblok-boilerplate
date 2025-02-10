@@ -1,0 +1,41 @@
+{
+  "name": "mobile_desc_link",
+  "display_name": "Description, Link",
+  "description": null,
+  "created_at": "2025-02-10T14:20:52.055Z",
+  "updated_at": "2025-02-10T14:20:52.055Z",
+  "id": 6936510,
+  "schema": {
+    "description": {
+      "type": "markdown",
+      "pos": 0,
+      "max_length": 380,
+      "id": "R0SGxeUqSLON0aVL-lMjrg"
+    },
+    "link_text": {
+      "type": "text",
+      "pos": 1,
+      "max_length": 100,
+      "id": "WNyKG-dHQgOTWx7ppXoIbA"
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 2,
+      "id": "rpEJW3O9SvumwWKMKimVhQ"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "Description, Link",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}

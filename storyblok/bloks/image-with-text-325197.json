@@ -1,0 +1,56 @@
+{
+  "name": "image-with-text",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:41.828Z",
+  "updated_at": "2025-02-10T14:20:41.828Z",
+  "id": 6936502,
+  "schema": {
+    "brand_logo": {
+      "type": "asset",
+      "pos": 0,
+      "id": "Z4uKD2OGR1GlQwMgttniCQ"
+    },
+    "description": {
+      "type": "text",
+      "pos": 1,
+      "id": "_ss8xm_bQt2k4OVTdItr-A"
+    },
+    "link_text": {
+      "type": "text",
+      "pos": 2,
+      "id": "QAu-yx5KTC-YauFGL5ZP9w"
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 3,
+      "email_link_type": false,
+      "allow_custom_attributes": false,
+      "id": "F7tmJAblRZWqQJY-fE_5zA"
+    },
+    "image": {
+      "type": "asset",
+      "pos": 4,
+      "id": "WhnJPnOMQSOzAqDWFt1tpA"
+    },
+    "order": {
+      "type": "boolean",
+      "pos": 5,
+      "id": "3FAHeaBWREiajPO7ZMmftg"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "image-with-text",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}

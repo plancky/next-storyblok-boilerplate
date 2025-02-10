@@ -1,0 +1,43 @@
+{
+  "name": "media-with-text-slide",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:50.193Z",
+  "updated_at": "2025-02-10T14:20:50.193Z",
+  "id": 6936508,
+  "schema": {
+    "heading": {
+      "type": "text",
+      "pos": 0,
+      "id": "XOeSys-oQnCyVsdsHfucNQ"
+    },
+    "description": {
+      "type": "richtext",
+      "pos": 1,
+      "id": "AFGqdnZ4Tpqo30WXAcF3mg"
+    },
+    "image": {
+      "type": "asset",
+      "pos": 2,
+      "filetypes": [
+        "images"
+      ],
+      "id": "yEyj58tjSbeH0GzGZxN9Pw"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "media-with-text-slide",
+  "component_group_uuid": "3f9f8569-dc9b-40ef-bb91-0b443a16ec61",
+  "color": "#fbce41",
+  "icon": "block-center-m",
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "slides"
+}

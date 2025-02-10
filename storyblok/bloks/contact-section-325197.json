@@ -1,0 +1,99 @@
+{
+  "name": "contact-section",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:31.524Z",
+  "updated_at": "2025-02-10T14:20:31.524Z",
+  "id": 6936494,
+  "schema": {
+    "heading": {
+      "type": "markdown",
+      "pos": 0,
+      "id": "huPS-uDXSdSFqo0pP7bbaw"
+    },
+    "subheading": {
+      "type": "markdown",
+      "pos": 1,
+      "id": "LkZFFzHmSuqJuQPvjWSn_Q"
+    },
+    "form_fields": {
+      "type": "options",
+      "pos": 3,
+      "options": [
+        {
+          "_uid": "0cfd7356-a5c6-4587-b78a-8aa651abb6f5",
+          "name": "firstname",
+          "value": "firstname"
+        },
+        {
+          "_uid": "e5e18555-c98d-4616-ad9d-2119f0c071ef",
+          "value": "lastname",
+          "name": "lastname"
+        },
+        {
+          "_uid": "9b5dfa33-bb7c-4e05-af44-4b68c04c540b",
+          "value": "email",
+          "name": "email"
+        },
+        {
+          "_uid": "3c260507-61b3-408b-837f-3079ea8a708e",
+          "value": "linkedinUrl",
+          "name": "linkedIn URL"
+        },
+        {
+          "_uid": "b363ecae-f578-426b-a938-8ba088589e00",
+          "value": "message",
+          "name": "message"
+        },
+        {
+          "_uid": "9f094dc8-230c-4d7a-84c1-dead1fb91903",
+          "value": "pitchdeck",
+          "name": "pitch deck"
+        },
+        {
+          "_uid": "9b747fd2-67b4-4ede-b615-35179314e068",
+          "value": "roundsize",
+          "name": "round size"
+        },
+        {
+          "_uid": "cb179767-a855-471a-ad81-4a0d94fe2800",
+          "value": "sector",
+          "name": "sector"
+        },
+        {
+          "_uid": "96807f66-bf52-4cc5-adce-f9cc4c5f451d",
+          "value": "pitchdeckUrl",
+          "name": "pitch deck url"
+        }
+      ],
+      "default_value": "",
+      "description": "Enable form fields by selecting the options in order. First name, last name and email are required fields. Thus make sure to always include them.",
+      "id": "HrLHF-XERHmdChdishKoCw"
+    },
+    "submitted_title": {
+      "type": "markdown",
+      "pos": 5,
+      "id": "RC22dcAWSqm-eWcvtYQ6tA"
+    },
+    "submitted_subtitle": {
+      "type": "markdown",
+      "pos": 6,
+      "id": "17qg2TyGSg-ky3WhyxxNtA"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "contact-section",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

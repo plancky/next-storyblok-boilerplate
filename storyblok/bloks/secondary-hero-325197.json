@@ -1,0 +1,111 @@
+{
+  "name": "secondary-hero",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:06.756Z",
+  "updated_at": "2025-02-10T14:21:06.756Z",
+  "id": 6936522,
+  "schema": {
+    "heading": {
+      "type": "markdown",
+      "pos": 0,
+      "max_length": 200,
+      "id": "DQPpBtaNRfKclMQzUuRLwg"
+    },
+    "subheading": {
+      "type": "markdown",
+      "pos": 1,
+      "max_length": 500,
+      "id": "JGHBtRMpTgq6orkgffksCw"
+    },
+    "heading_alignment": {
+      "type": "option",
+      "pos": 2,
+      "options": [
+        {
+          "_uid": "e6f8af10-8bbd-47d0-9a71-e8793e0fdb3f",
+          "name": "Left",
+          "value": "start"
+        },
+        {
+          "_uid": "f2234cd9-6e31-4457-8a50-bce37011d39a",
+          "value": "center",
+          "name": "Center"
+        },
+        {
+          "_uid": "822ec395-e3e5-43be-bf38-d44f19b4ba36",
+          "value": "end",
+          "name": "Right"
+        }
+      ],
+      "default_value": "start",
+      "use_uuid": true,
+      "description": "Alignment options for the heading on desktop viewport",
+      "id": "IBYAOAzFRh60OfOUzM0NdA"
+    },
+    "subheading_alignment": {
+      "type": "option",
+      "pos": 3,
+      "options": [
+        {
+          "_uid": "f5d1a0dd-e54a-446f-b8c7-8320b1f6d25c",
+          "name": "Left",
+          "value": "start"
+        },
+        {
+          "_uid": "e34f2f28-086d-4527-9595-9e471e01bb25",
+          "value": "center",
+          "name": "Center"
+        },
+        {
+          "_uid": "4ccb4de2-4e7b-438c-9d78-9ffba433e40e",
+          "value": "end",
+          "name": "Right"
+        }
+      ],
+      "default_value": "end",
+      "use_uuid": true,
+      "description": "Alignment options for the subheading on desktop viewport",
+      "id": "SrllExREQzafIwu9Pa5suQ"
+    },
+    "top_spacing": {
+      "type": "number",
+      "pos": 5,
+      "default_value": "160",
+      "id": "mA-0WTdaT-CEG8rrka1dnA"
+    },
+    "bottom_spacing": {
+      "type": "number",
+      "pos": 6,
+      "default_value": "168",
+      "id": "gln38dnTRBWTeeeHiYPVKw"
+    },
+    "mobile_top_spacing": {
+      "type": "number",
+      "pos": 7,
+      "default_value": "80",
+      "id": "b0Kj8ua5QySwlUTzMeOpgg"
+    },
+    "mobile_bottom_spacing": {
+      "type": "number",
+      "pos": 8,
+      "default_value": "40",
+      "id": "eXJvDEDfQ3eOVlwdiKrluQ"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "secondary-hero",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

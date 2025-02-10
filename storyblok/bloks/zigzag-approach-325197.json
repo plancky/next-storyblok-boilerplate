@@ -1,0 +1,84 @@
+{
+  "name": "zigzag-approach",
+  "display_name": "Zigzag Approach",
+  "description": null,
+  "created_at": "2025-02-10T14:21:19.350Z",
+  "updated_at": "2025-02-10T14:21:19.350Z",
+  "id": 6936534,
+  "schema": {
+    "heading": {
+      "type": "markdown",
+      "pos": 0,
+      "max_length": 400,
+      "id": "litdw90BQSCXAG1O0W7DYw"
+    },
+    "background_color": {
+      "type": "text",
+      "pos": 1,
+      "default_value": "#FEFFF6",
+      "description": "Hex value for the background color (e.g. #000000)",
+      "id": "A-2-e3pWSjitqrt2tAHvww"
+    },
+    "foreground_color": {
+      "type": "text",
+      "pos": 2,
+      "default_value": "#1C7E82",
+      "description": "Hex value for the foreground color (e.g. #000000)",
+      "id": "jUwXFK3cQn2fwU68UskLqQ"
+    },
+    "accordion": {
+      "type": "bloks",
+      "pos": 3,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "accordion-block"
+      ],
+      "description": "Collection of the Accordion blocks",
+      "id": "WVjKbYn7RiO4CVLzUHyeoA"
+    },
+    "top_spacing": {
+      "type": "number",
+      "pos": 6,
+      "default_value": "120",
+      "description": "Section top spacing",
+      "id": "1-ObK1q3Rym1rzg9w4ChtA"
+    },
+    "bottom_spacing": {
+      "type": "number",
+      "pos": 7,
+      "default_value": "95",
+      "description": "Section bottom spacing",
+      "id": "JRwDLs5uRVCAkFVUe13H-A"
+    },
+    "mobile_top_spacing": {
+      "type": "number",
+      "pos": 8,
+      "default_value": "60",
+      "description": "Section mobile top spacing\n",
+      "id": "cO8-l6nRQkGbvuElWVeDxQ"
+    },
+    "mobile_bottom_spacing": {
+      "type": "number",
+      "pos": 9,
+      "default_value": "40",
+      "description": "Section mobile bottom spacing",
+      "id": "xc23WBHdQ_OtgE1mIaIXpg"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "Zigzag Approach",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

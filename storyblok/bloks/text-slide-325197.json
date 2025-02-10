@@ -1,0 +1,37 @@
+{
+  "name": "text-slide",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:14.982Z",
+  "updated_at": "2025-02-10T14:21:14.982Z",
+  "id": 6936530,
+  "schema": {
+    "heading": {
+      "type": "markdown",
+      "pos": 0,
+      "max_length": 60,
+      "id": "U6gz6o06TPem1nBf-zSQ3Q"
+    },
+    "description": {
+      "type": "markdown",
+      "pos": 1,
+      "max_length": 600,
+      "id": "IW3e7y2mT1-2fvCbL83R7w"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "text-slide",
+  "component_group_uuid": "3f9f8569-dc9b-40ef-bb91-0b443a16ec61",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "slides"
+}

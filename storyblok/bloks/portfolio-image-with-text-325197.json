@@ -1,0 +1,47 @@
+{
+  "name": "portfolio-image-with-text",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:01.336Z",
+  "updated_at": "2025-02-10T14:21:01.336Z",
+  "id": 6936517,
+  "schema": {
+    "items": {
+      "type": "bloks",
+      "pos": 0,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "image-with-text"
+      ],
+      "id": "KK2NbP5ESYyEV-sNInnzXg"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "portfolio-image-with-text",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [
+    {
+      "id": 58605,
+      "name": "section"
+    },
+    {
+      "id": 58607,
+      "name": "portfolio"
+    }
+  ],
+  "internal_tag_ids": [
+    "58605",
+    "58607"
+  ],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

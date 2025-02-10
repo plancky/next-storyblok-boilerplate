@@ -1,0 +1,42 @@
+{
+  "name": "header-drawer",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:38.103Z",
+  "updated_at": "2025-02-10T14:20:38.103Z",
+  "id": 6936499,
+  "schema": {
+    "links": {
+      "type": "bloks",
+      "pos": 2,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "NavLink"
+      ],
+      "description": "Navigation links in the drawer",
+      "id": "oURRmOi4Rh6-ly2833CevA"
+    },
+    "copyright_text": {
+      "type": "richtext",
+      "pos": 3,
+      "description": "copyright text in the drawer",
+      "id": "ZbipaCcIS4-Pvcmp--uPdA"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "header-drawer",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

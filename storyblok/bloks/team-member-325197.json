@@ -1,0 +1,53 @@
+{
+  "name": "team-member",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:07.784Z",
+  "updated_at": "2025-02-10T14:21:07.784Z",
+  "id": 6936523,
+  "schema": {
+    "image": {
+      "type": "asset",
+      "pos": 0,
+      "filetypes": [
+        "images"
+      ],
+      "id": "-AR9cwMsTD6MOBtcmLb5SA"
+    },
+    "name": {
+      "type": "text",
+      "pos": 1,
+      "id": "TX26St7oRQqH2LiecDXURg"
+    },
+    "profession": {
+      "type": "text",
+      "pos": 2,
+      "id": "dGR_6apZQy-ya8TqCpOs4g"
+    },
+    "description": {
+      "type": "text",
+      "pos": 3,
+      "id": "571ya0zbS1qD09y68703xA"
+    },
+    "url": {
+      "type": "multilink",
+      "pos": 4,
+      "email_link_type": true,
+      "id": "qWyZC4qzRnuD3BuHdHHMtg"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": true,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "team-member",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}

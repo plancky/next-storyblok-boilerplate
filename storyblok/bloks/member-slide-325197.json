@@ -1,0 +1,53 @@
+{
+  "name": "member-slide",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:51.190Z",
+  "updated_at": "2025-02-10T14:20:51.190Z",
+  "id": 6936509,
+  "schema": {
+    "name": {
+      "type": "text",
+      "pos": 0,
+      "required": true,
+      "max_length": 70,
+      "id": "utnuSJnZQhil_QM_0oqfzA"
+    },
+    "profession": {
+      "type": "text",
+      "pos": 1,
+      "max_length": 150,
+      "id": "EsZn_1i4T_Kaf80LiZKIRw"
+    },
+    "description": {
+      "type": "text",
+      "pos": 2,
+      "max_length": 700,
+      "id": "By5tatseQy2DkNmEWyELkw"
+    },
+    "image": {
+      "type": "asset",
+      "pos": 3,
+      "filetypes": [
+        "images"
+      ],
+      "required": true,
+      "id": "WnZtpia7RZiFFv1y8jmnUw"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "member-slide",
+  "component_group_uuid": "3f9f8569-dc9b-40ef-bb91-0b443a16ec61",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "slides"
+}

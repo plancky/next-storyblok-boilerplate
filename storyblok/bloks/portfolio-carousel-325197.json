@@ -1,0 +1,67 @@
+{
+  "name": "portfolio-carousel",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:58.494Z",
+  "updated_at": "2025-02-10T14:20:58.494Z",
+  "id": 6936514,
+  "schema": {
+    "heading": {
+      "type": "text",
+      "pos": 0,
+      "max_length": 200,
+      "id": "sxdI-PLgTUCEe7vswWA8Jg"
+    },
+    "slides": {
+      "type": "bloks",
+      "pos": 1,
+      "key": "Slides",
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "media-with-text-slide",
+        "global_reference"
+      ],
+      "id": "lpQfxrnuQSWEGf0H25vxyg"
+    },
+    "mobile_view": {
+      "type": "bloks",
+      "pos": 2,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "mobile_desc_link"
+      ],
+      "maximum": 1,
+      "display_name": "Info",
+      "id": "-iij2EbmRlOeQapJxoJiYg"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "portfolio-carousel",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [
+    {
+      "id": 58605,
+      "name": "section"
+    },
+    {
+      "id": 58606,
+      "name": "home"
+    }
+  ],
+  "internal_tag_ids": [
+    "58605",
+    "58606"
+  ],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

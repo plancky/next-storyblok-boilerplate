@@ -1,0 +1,107 @@
+@import "../styles/layout.css";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --background-page-rgb: 254, 255, 246;
+}
+
+/* For Big Text Marquee */
+.marquee {
+  --marquee-gap: 1rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--marquee-gap);
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--marquee-gap);
+  animation: scroll linear;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--marquee-gap)));
+  }
+}
+
+/* End Marquee */
+
+@layer base {
+  @font-face {
+    font-family: "Coconat";
+    src: url("../public/fonts/Coconat-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Coconat Demi";
+    src: url("../public/fonts/Coconat-Demi.woff") format("woff2");
+  }
+
+  @font-face {
+    font-family: "Figtree";
+    src: url("../public/fonts/Figtree-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Figtree Medium";
+    src: url("../public/fonts/Figtree-Medium.ttf") format("truetype");
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animated-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0 1px;
+    background-position: 100% 100%;
+    transition: background-size 0.3s ease;
+  }
+
+  .animated-underline:hover {
+    @apply no-underline bg-[0_100%] bg-[length:100%_1px] [&_svg]:translate-x-[2px];
+  }
+
+  .animate-underline {
+    @apply bg-[0_100%] bg-[length:100%_1px]
+  }
+
+  a {
+    @apply animated-underline [&_svg]:transition-transform [&_svg]:duration-300;
+  }
+}
+
+/* For embla carousel */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0;
+}

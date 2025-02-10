@@ -1,0 +1,48 @@
+{
+  "name": "team-members",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:08.819Z",
+  "updated_at": "2025-02-10T14:21:08.819Z",
+  "id": 6936524,
+  "schema": {
+    "slides": {
+      "type": "bloks",
+      "pos": 1,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "member-slide"
+      ],
+      "description": "Create slide by adding the content scoped only to this section",
+      "id": "fO5BxJ8rTXO2loR9xUyt7A"
+    },
+    "reference_slide": {
+      "type": "bloks",
+      "pos": 1,
+      "maximum": 1,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "global_reference"
+      ],
+      "description": "Create new slide by adding reference to existing \"Team Member\" story.",
+      "id": "7qFXFu5hS9acuussgpT45A"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "team-members",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

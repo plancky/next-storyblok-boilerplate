@@ -1,0 +1,72 @@
+{
+  "name": "portfolio_item",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:02.394Z",
+  "updated_at": "2025-02-10T14:21:02.394Z",
+  "id": 6936518,
+  "schema": {
+    "company_name": {
+      "type": "text",
+      "pos": 0,
+      "required": true,
+      "id": "y1q-JNkLQte0SfhUIlz7Rw"
+    },
+    "brand_logo": {
+      "type": "asset",
+      "pos": 1,
+      "filetypes": [
+        "images"
+      ],
+      "description": "Please resize the logo to 350px x 80px (aspect-ratio: 350/80).",
+      "id": "wotc5zwdSs2ulRsgXZ2Y9w"
+    },
+    "logo_height": {
+      "type": "number",
+      "pos": 2,
+      "default_value": "80",
+      "id": "fdGyYK1xROWLx-nO5VZI8g"
+    },
+    "mobile_logo_height": {
+      "type": "number",
+      "pos": 3,
+      "default_value": "40",
+      "id": "RaJ76zxeTWeFK3YT0sxjxQ"
+    },
+    "company_description": {
+      "type": "richtext",
+      "pos": 4,
+      "id": "42odc0M-TfyL5K2v9YpoPw",
+      "description": "Description content, (word limit: 60 words)"
+    },
+    "featured_image": {
+      "type": "asset",
+      "pos": 5,
+      "filetypes": [
+        "images",
+        "videos"
+      ],
+      "id": "593tybWnSW6y5eraMsMd5w",
+      "description": "Featured image of the item (size: 1024px x 980px, aspect-ratio: 1024/980)"
+    },
+    "company_link": {
+      "type": "multilink",
+      "pos": 6,
+      "id": "u2FjP7taSvOPLo9sVJclWA"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": true,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "portfolio_item",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}

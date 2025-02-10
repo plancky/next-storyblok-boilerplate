@@ -1,0 +1,105 @@
+{
+  "name": "our-approach",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:54.147Z",
+  "updated_at": "2025-02-10T14:20:54.147Z",
+  "id": 6936512,
+  "schema": {
+    "heading": {
+      "type": "markdown",
+      "pos": 0,
+      "max_length": 300,
+      "id": "jqEaHUS0RU-zk83tJDZALw"
+    },
+    "background_color": {
+      "type": "text",
+      "pos": 1,
+      "default_value": "#FEFFF6",
+      "description": "Enter Hex code for the background color (e.g. #000000)",
+      "id": "f1n5D2sqS2eWHlGLg-7QTg"
+    },
+    "foreground_color": {
+      "type": "text",
+      "pos": 2,
+      "default_value": "#1C7E82",
+      "description": "Enter Hex code for the foreground color (e.g. #000000)",
+      "id": "3XtsBI2VRfmlURtr6G7Oaw"
+    },
+    "accordion": {
+      "type": "bloks",
+      "pos": 3,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "accordion-block"
+      ],
+      "description": "Collection of accordion blocks",
+      "id": "jGqFu1vJTuWjTHvJ8a85Ig"
+    },
+    "image": {
+      "type": "asset",
+      "pos": 4,
+      "filetypes": [
+        "images"
+      ],
+      "description": "Logo to display on desktop viewport",
+      "id": "CAiJjHYRS4Gh7NGo1WVYNA"
+    },
+    "content_padding": {
+      "type": "boolean",
+      "pos": 5,
+      "description": "Adds padding to the content in accordion blocks",
+      "id": "a4TFVLDBSkuW_MWgc7amEQ"
+    },
+    "hide_last_border": {
+      "type": "boolean",
+      "pos": 6,
+      "description": "Hide the border on the last accordion block",
+      "id": "luy56PgMTkezHoJD0jHV_Q"
+    },
+    "top_spacing": {
+      "type": "number",
+      "pos": 7,
+      "default_value": "120",
+      "description": "Section Top spacing",
+      "id": "N4FtitFTSEqImdYd0fuwcg"
+    },
+    "bottom_spacing": {
+      "type": "number",
+      "pos": 8,
+      "default_value": "95",
+      "description": "Section Bottom Spacing",
+      "id": "ibWBSupPRrSIKlrKXhcb_A"
+    },
+    "mobile_top_spacing": {
+      "type": "number",
+      "pos": 9,
+      "default_value": "60",
+      "description": "Mobile Top spacing",
+      "id": "xpyRIQLHQg-X06r8dodnPw"
+    },
+    "mobile_bottom_spacing": {
+      "type": "number",
+      "pos": 10,
+      "default_value": "40",
+      "description": "Mobile bottom spacing",
+      "id": "B975ZW7JQHuBAbobFa60fQ"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "our-approach",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

@@ -1,0 +1,78 @@
+{
+  "name": "post",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:21:03.946Z",
+  "updated_at": "2025-02-10T14:21:03.946Z",
+  "id": 6936519,
+  "schema": {
+    "featured_image": {
+      "type": "asset",
+      "pos": 0,
+      "id": "ds4UvXecSVeFbO5yf7rbjg"
+    },
+    "published_at": {
+      "type": "datetime",
+      "pos": 1,
+      "required": true,
+      "disable_time": true,
+      "id": "coyB_1szQbWQeC7bNHq6tQ"
+    },
+    "updated_at": {
+      "type": "datetime",
+      "pos": 2,
+      "disable_time": true,
+      "id": "wE6ejPxjSCes_yGfYaD0eA"
+    },
+    "author": {
+      "type": "options",
+      "pos": 3,
+      "is_reference_type": true,
+      "source": "internal_stories",
+      "entry_appearance": "card",
+      "allow_advanced_search": true,
+      "id": "DrxC7NLVSuG8qfWQLoMSuA"
+    },
+    "title": {
+      "type": "textarea",
+      "pos": 4,
+      "id": "g2AcqBUHRPqeavJTR2GDGg"
+    },
+    "description": {
+      "type": "text",
+      "pos": 5,
+      "id": "Sd6phwjvSsmUykwcKk-Kgw"
+    },
+    "synopsis": {
+      "type": "textarea",
+      "pos": 6,
+      "id": "gj_GTyzjRpef9CKd2cF7Zg"
+    },
+    "content": {
+      "type": "richtext",
+      "pos": 7,
+      "id": "VqY7kPWcSYiciMNeEfvTJQ"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": true,
+  "preview_tmpl": null,
+  "is_nestable": false,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "post",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [
+    {
+      "id": 58611,
+      "name": "consumer insights"
+    }
+  ],
+  "internal_tag_ids": [
+    "58611"
+  ],
+  "content_type_asset_preview": null
+}

@@ -1,0 +1,99 @@
+{
+  "name": "heading-with-carousel",
+  "display_name": "",
+  "description": null,
+  "created_at": "2025-02-10T14:20:38.944Z",
+  "updated_at": "2025-02-10T14:20:38.944Z",
+  "id": 6936500,
+  "schema": {
+    "heading": {
+      "type": "markdown",
+      "pos": 0,
+      "key": "Heading",
+      "max_length": 140,
+      "id": "t8EMiQTxTBSdo_IID_pwfA"
+    },
+    "description": {
+      "type": "markdown",
+      "pos": 1,
+      "key": "description",
+      "max_length": 700,
+      "id": "uBasO-NRQUmZO56AzBg_CA"
+    },
+    "link_text": {
+      "type": "text",
+      "pos": 2,
+      "description": "CTA link below description ",
+      "id": "XyVis9ZTS_a_nPzIrRPy7w"
+    },
+    "link": {
+      "type": "multilink",
+      "pos": 3,
+      "id": "olSSlKCnTei50nL14DeYOw"
+    },
+    "order": {
+      "type": "boolean",
+      "pos": 4,
+      "display_name": "Media below text",
+      "default_value": true,
+      "description": "Change the order of carousel and text",
+      "id": "6MCU2pncQJyT9HSnmf_Fhw"
+    },
+    "carousel_height": {
+      "type": "number",
+      "pos": 5,
+      "description": "Height of the carousel slides. Value in pixels (px)",
+      "default_value": "500",
+      "id": "CiL-klZzQbqi_FZDsaxrrw"
+    },
+    "carousel_width": {
+      "type": "number",
+      "pos": 6,
+      "default_value": "350",
+      "description": "Width of the carousel slides. Value in pixels (px)",
+      "id": "bb5ZtiLMSeGB-Ff9InUTFg"
+    },
+    "Images": {
+      "type": "multiasset",
+      "pos": 7,
+      "filetypes": [
+        "images"
+      ],
+      "description": "Resize images to 420px x 500px (aspect-ratio: 420/500)",
+      "id": "nx9i8AfsTT2kJFK3-FUl8g"
+    },
+    "loop": {
+      "type": "boolean",
+      "pos": 8,
+      "description": "Enable loop on the carousel",
+      "id": "qqhoXZaZRcWX8svVXKKLcQ"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "heading-with-carousel",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [
+    {
+      "id": 58605,
+      "name": "section"
+    },
+    {
+      "id": 58606,
+      "name": "home"
+    }
+  ],
+  "internal_tag_ids": [
+    "58605",
+    "58606"
+  ],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

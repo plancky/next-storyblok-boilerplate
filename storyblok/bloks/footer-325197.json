@@ -1,0 +1,81 @@
+{
+  "name": "footer",
+  "display_name": "Footer",
+  "description": null,
+  "created_at": "2025-02-10T14:20:33.782Z",
+  "updated_at": "2025-02-10T14:20:33.782Z",
+  "id": 6936495,
+  "schema": {
+    "title": {
+      "type": "text",
+      "pos": 0,
+      "key": "title",
+      "display_name": "Title",
+      "description": "The main heading displayed in the website's footer area. Hidden when logo is provided",
+      "tooltip": false,
+      "id": "hmtpeeRHSVWEJ4xJ3Hiohg"
+    },
+    "logo": {
+      "type": "asset",
+      "pos": 1,
+      "description": "Footer logo for desktop",
+      "id": "UGT4l5E2R9S7U2RmkV9asQ"
+    },
+    "mobile_logo": {
+      "type": "asset",
+      "pos": 2,
+      "description": "Footer logo for mobile, tablet devices",
+      "id": "rpQ23L40QLm2S-b1P1GHnQ"
+    },
+    "navbar": {
+      "type": "bloks",
+      "pos": 3,
+      "display_name": "Navbar",
+      "key": "Navbar",
+      "description": "Group of navigation links for footer",
+      "id": "B01rK5W-Sdenzlcwc6_0kQ"
+    },
+    "copyright_text": {
+      "type": "richtext",
+      "pos": 4,
+      "id": "yZzUDIxKSVqaP_4sqEsriA"
+    },
+    "secondary_variant": {
+      "type": "boolean",
+      "pos": 5,
+      "description": "Enables the secondary variant of the footer",
+      "id": "R0PrludwQjm2kTJ1mgE5cA"
+    },
+    "secondary_symbol": {
+      "type": "asset",
+      "pos": 6,
+      "id": "xEkTgNJHQeGzqolmccwR2g"
+    },
+    "description": {
+      "type": "text",
+      "pos": 7,
+      "id": "VEbkCw1sRai51UxDSytIvA"
+    },
+    "secondary_logo": {
+      "type": "asset",
+      "pos": 8,
+      "description": "Footer logo for the secondary footer",
+      "id": "_qynyToWRrW4RpDFtQw6Ow"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "Footer",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

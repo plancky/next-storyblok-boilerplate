@@ -1,0 +1,56 @@
+{
+  "name": "portfolio-grid",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:59.395Z",
+  "updated_at": "2025-02-10T14:20:59.395Z",
+  "id": 6936515,
+  "schema": {
+    "grid_items": {
+      "type": "bloks",
+      "pos": 1,
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "portfolio_item"
+      ],
+      "filter_content_type": [],
+      "source": "internal_stories",
+      "entry_appearance": "card",
+      "allow_advanced_search": true,
+      "key": "grid_items",
+      "description": "Add local portfolio slides to display in the section",
+      "id": "ol1td8OcQUqc0Jl71ydw3w"
+    },
+    "portfolio_references": {
+      "type": "bloks",
+      "pos": 2,
+      "filter_content_type": [
+        "portfolio_item"
+      ],
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "global_reference"
+      ],
+      "key": "portfolio_items_references",
+      "description": "Add references to the \"Portfolio-Items\" to display as slide in this section",
+      "id": "b6fIcIt5QEistD8Hn5v5-g"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "portfolio-grid",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

@@ -1,0 +1,43 @@
+{
+  "name": "main-hero",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:47.035Z",
+  "updated_at": "2025-02-10T14:20:47.035Z",
+  "id": 6936506,
+  "schema": {
+    "logo": {
+      "type": "asset",
+      "pos": 1,
+      "key": "logo",
+      "id": "fGLnfmc2QpCkztm0D3_ITw"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": false,
+  "preview_tmpl": null,
+  "is_nestable": true,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "main-hero",
+  "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [
+    {
+      "id": 58605,
+      "name": "section"
+    },
+    {
+      "id": 58606,
+      "name": "home"
+    }
+  ],
+  "internal_tag_ids": [
+    "58605",
+    "58606"
+  ],
+  "content_type_asset_preview": null,
+  "component_group_name": "sections"
+}

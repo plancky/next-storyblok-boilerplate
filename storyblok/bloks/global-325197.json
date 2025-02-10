@@ -1,0 +1,29 @@
+{
+  "name": "global",
+  "display_name": null,
+  "description": null,
+  "created_at": "2025-02-10T14:20:34.920Z",
+  "updated_at": "2025-02-10T14:20:34.920Z",
+  "id": 6936496,
+  "schema": {
+    "global": {
+      "type": "bloks",
+      "pos": 0,
+      "id": "itCbG0EURkC5viQ49HIRcg"
+    }
+  },
+  "image": null,
+  "preview_field": null,
+  "is_root": true,
+  "preview_tmpl": null,
+  "is_nestable": false,
+  "all_presets": [],
+  "preset_id": null,
+  "real_name": "global",
+  "component_group_uuid": null,
+  "color": null,
+  "icon": null,
+  "internal_tags_list": [],
+  "internal_tag_ids": [],
+  "content_type_asset_preview": null
+}
