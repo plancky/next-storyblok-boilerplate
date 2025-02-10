@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import CoconutLogoSymbol from '@/assets/coconut logo symbol.svg'
-import CoconutLogo from '@/assets/coconut logo wordmark.svg'
+import CoconutLogoSymbol from '@/assets/coconut_logo_symbol.svg'
+import CoconutLogo from '@/assets/coconut_logo_wordmark.svg'
 import { richTextResolver } from '@storyblok/richtext'
 
 const { render: renderHtmlString } = richTextResolver()

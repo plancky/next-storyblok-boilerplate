@@ -1,15 +1,24 @@
 import { storyblokEditable } from '@storyblok/react/rsc'
 
 import { Header } from '@sections/Header'
+import type { HeaderStoryblok } from '@sb/types'
 
 type HeaderBlokProps = {
-    blok: any
+    blok: HeaderStoryblok
 }
 
 export function HeaderBlok({ blok }: HeaderBlokProps) {
+    const { title, logo, small_logo_icon, show_small_icon, mobile_logo } = blok
     return (
         <section {...storyblokEditable(blok)}>
-            <Header title={'Sozo'} logo={'logo'} navbar={[]} />
+            <Header
+                blok={blok}
+                title={title}
+                logo={logo}
+                small_logo_icon={small_logo_icon}
+                show_small_icon={show_small_icon}
+                mobile_logo={mobile_logo}
+            />
         </section>
     )
 }

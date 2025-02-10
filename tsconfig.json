@@ -21,7 +21,8 @@
         "types": ["bun-types"],
         "paths": {
             "@/*": ["./*"],
-            "@sections/*": ["./components/sections/*"]
+            "@sections/*": ["./components/sections/*"],
+            "@sb/types": ["./storyblok/types/sb-types.d.ts"]
         }
     },
     "include": [

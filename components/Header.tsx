@@ -15,8 +15,8 @@ import React, { useState } from 'react'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import Hamburger from './icons/IconHamburger'
 import IconClose from './icons/IconClose'
-import CoconutPrimaryLogo from '@/assets/coconut logo.svg'
-import CoconutPrimaryLogoSymbol from '@/assets/coconut logo symbol.svg'
+import CoconutPrimaryLogo from '@/assets/coconut_logo.svg'
+import CoconutPrimaryLogoSymbol from '@/assets/coconut_logo_symbol.svg'
 
 const secondaryHeaderSlugs = ['^/blog/']
 const Header = ({ blok }: { blok: any }) => {

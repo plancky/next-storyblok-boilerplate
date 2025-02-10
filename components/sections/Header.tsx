@@ -1,44 +1,44 @@
+'use client'
 /* Contains the React component for Header Section */
 import Image from 'next/image'
-import {
-    Drawer,
-    DrawerClose,
-    DrawerContent,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerTitle,
-    DrawerTrigger,
-} from '@/components/ui/drawer'
+import type {
+    HeaderStoryblok,
+    AssetStoryblok,
+    HeaderDrawerStoryblok,
+} from '@sb/types'
+
+import { HeaderDrawer } from './HeaderDrawer'
 import React, { useState } from 'react'
 import { useMediaQuery } from '../hooks/useMediaQuery'
-import Hamburger from '../icons/IconHamburger'
-import IconClose from '../icons/IconClose'
 import CoconutPrimaryLogo from '@/assets/coconut_logo.svg'
 import CoconutPrimaryLogoSymbol from '@/assets/coconut_logo_symbol.svg'
+import { storyblokEditable } from '@storyblok/react/rsc'
 
 type Props = React.AllHTMLAttributes<Element>
 
 interface HeaderProps extends Props {
     title?: string
-    logo?: any
+    logo?: AssetStoryblok
 
     small_logo_icon?: any
     show_small_icon?: boolean
 
     mobile_logo?: any
-    navbar?: any[]
+    blok: HeaderStoryblok
+    navbar?: HeaderStoryblok['navbar']
 }
 
 export const Header = ({
     title,
     logo,
     navbar,
+    small_logo_icon,
     show_small_icon = true,
     mobile_logo,
-    small_logo_icon,
+    blok,
     ...props
 }: HeaderProps) => {
-    const navbarBloks = navbar
+    const navLinks = navbar ?? blok.navbar
     const isMobile = useMediaQuery('(max-width: 1023px)')
     const headerRef = React.useRef<HTMLDivElement>(null)
 
@@ -111,6 +111,7 @@ export const Header = ({
                     ? 'bg-primary border-coconut text-coconut'
                     : ' bg-coconut border-primary text-primary fade-logo'
             } content-grid fixed h-[60px] left-0 top-0 transition-transform duration-300 border-b w-full py-3 lg:py-[18px]`}
+            {...props}
         >
             <div className="flex w-full justify-between">
                 {logo ? (
@@ -151,8 +152,8 @@ export const Header = ({
                                     />
                                 ) : (
                                     <Image
-                                        src={logo.filename}
-                                        alt={logo.alt}
+                                        src={logo.filename!}
+                                        alt={logo.alt!}
                                         fill
                                         className="h-auto w-auto object-cover"
                                     />
@@ -170,7 +171,7 @@ export const Header = ({
                                         ? CoconutPrimaryLogoSymbol
                                         : mobile_logo.filename
                                 }
-                                alt={blok.mobile_logo.alt}
+                                alt={blok.mobile_logo.alt!}
                                 fill
                                 className="h-auto w-auto object-cover"
                             />
@@ -180,7 +181,7 @@ export const Header = ({
                     <div>{title}</div>
                 )}
                 <div className="lg:flex hidden items-center gap-9">
-                    {navbar?.map((nestedBlok: any) => (
+                    {navLinks?.map((nestedBlok) => (
                         <div
                             key={nestedBlok._uid}
                             className="px-2 lg:px-0 xl:px-4 first:pl-0 last:pr-0 "

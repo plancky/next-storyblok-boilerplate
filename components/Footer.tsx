@@ -5,8 +5,8 @@ import { FooterSecondary } from './FooterSecondary'
 import { richTextResolver } from '@storyblok/richtext'
 import React from 'react'
 import { useEffect, useState } from 'react'
-import CoconutLogo from '@/assets/footer coconut logo.svg'
-import DesktopCoconutLogo from '@/assets/coconut footer logo.svg'
+import CoconutLogo from '@/assets/footer_coconut_logo.svg'
+import DesktopCoconutLogo from '@/assets/coconut_footer_logo.svg'
 
 const { render: renderHtmlString } = richTextResolver()
 const secondaryFooterSlugs = ['/portfolio']

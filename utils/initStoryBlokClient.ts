@@ -26,6 +26,7 @@ import {
     TextCardsCarousel,
     VenturePartners,
 } from '@/components/index'
+import { HeaderBlok } from '@/components/bloks/HeaderBlok'
 import TestimonialsCardCarousel from '@/components/TestimonialsCardCarousel'
 import { ZigzagApproach } from '@/components/ZigzagApproach'
 import { storyblokInit, apiPlugin } from '@storyblok/react/rsc'
@@ -41,7 +42,7 @@ export function initStoryblokClient() {
             page: Page,
             post: Post,
             global: Global,
-            header: Header,
+            header: HeaderBlok,
             footer: Footer,
             'main-hero': MainHero,
             'secondary-hero': SecondaryHero,

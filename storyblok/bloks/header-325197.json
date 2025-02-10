@@ -3,7 +3,7 @@
   "display_name": "Header",
   "description": null,
   "created_at": "2025-02-10T14:20:37.061Z",
-  "updated_at": "2025-02-10T14:20:37.061Z",
+  "updated_at": "2025-02-10T17:37:15.309Z",
   "id": 6936498,
   "schema": {
     "title": {
@@ -53,7 +53,12 @@
       "display_name": "Navbar",
       "key": "Navbar",
       "description": "Group of navigation links in header",
-      "id": "ogvRXENiQUOFBPkn-sN1oQ"
+      "id": "ogvRXENiQUOFBPkn-sN1oQ",
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "NavLink"
+      ]
     },
     "drawer": {
       "type": "bloks",
