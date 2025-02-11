@@ -3,7 +3,7 @@
   "display_name": "Header",
   "description": null,
   "created_at": "2025-02-10T14:20:37.061Z",
-  "updated_at": "2025-02-10T17:37:15.309Z",
+  "updated_at": "2025-02-11T10:57:19.647Z",
   "id": 6936498,
   "schema": {
     "title": {
@@ -64,8 +64,14 @@
       "type": "bloks",
       "pos": 6,
       "maximum": 1,
+      "required": true,
       "description": "Header Drawer for the mobile devices",
-      "id": "6FiuicYZSQOcvOINoxKzJQ"
+      "id": "6FiuicYZSQOcvOINoxKzJQ",
+      "restrict_type": "",
+      "restrict_components": true,
+      "component_whitelist": [
+        "header-drawer"
+      ]
     }
   },
   "image": null,
@@ -73,7 +79,17 @@
   "is_root": false,
   "preview_tmpl": null,
   "is_nestable": true,
-  "all_presets": [],
+  "all_presets": [
+    {
+      "id": 2474436,
+      "name": "default preset",
+      "component_id": 6936498,
+      "image": "",
+      "icon": "block-block",
+      "color": "#1a1f36",
+      "description": ""
+    }
+  ],
   "preset_id": null,
   "real_name": "Header",
   "component_group_uuid": "1ea14631-76ef-4e77-acd8-da30cc712b18",

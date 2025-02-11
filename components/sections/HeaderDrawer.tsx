@@ -15,14 +15,37 @@ import {
     DrawerTrigger,
 } from '@/components/ui/drawer'
 import React, { useState } from 'react'
-import { useMediaQuery } from '../hooks/useMediaQuery'
 import Hamburger from '../icons/IconHamburger'
 import IconClose from '../icons/IconClose'
 import { storyblokEditable } from '@storyblok/react/rsc'
 
-export function HeaderDrawer({ blok }: { blok: HeaderStoryblok }) {
+type Props = React.AllHTMLAttributes<Element>
+import { NavLink, Richtext } from './types'
+
+interface HeaderDrawerProps extends Props {
+    title?: string
+    logo?: AssetStoryblok
+    mobile_logo?: AssetStoryblok
+    small_logo_icon?: AssetStoryblok
+
+    show_small_icon?: boolean
+
+    navbar?: NavLink[]
+    links?: NavLink[]
+    copyright_text?: Richtext
+}
+
+export function HeaderDrawer({
+    title,
+    logo,
+    small_logo_icon,
+    show_small_icon,
+    mobile_logo,
+    navbar,
+    links,
+    copyright_text,
+}: HeaderDrawerProps) {
     const [open, setOpen] = React.useState(false)
-    const drawerConfig = blok.drawer![0]
 
     return (
         <Drawer
@@ -30,7 +53,7 @@ export function HeaderDrawer({ blok }: { blok: HeaderStoryblok }) {
             noBodyStyles
             open={open}
             fixed
-            direction="left"
+            direction="right"
             onOpenChange={setOpen}
         >
             <DrawerTrigger
@@ -50,8 +73,8 @@ export function HeaderDrawer({ blok }: { blok: HeaderStoryblok }) {
                                 className="flex bg-none lg:hidden relative w-[40px] aspect-[40/34] h-auto"
                             >
                                 <Image
-                                    src={blok?.mobile_logo?.filename!}
-                                    alt={blok?.mobile_logo?.alt!}
+                                    src={mobile_logo?.filename!}
+                                    alt={mobile_logo?.alt!}
                                     fill
                                     className="h-auto w-auto object-cover"
                                 />
@@ -66,7 +89,7 @@ export function HeaderDrawer({ blok }: { blok: HeaderStoryblok }) {
                 <div className="flex flex-col h-full py-10 w-full justify-between">
                     <section className="flex-shrink flex flex-col justify-between w-full">
                         <div className="flex flex-col">
-                            {blok?.navbar?.map((navlink: any) => {
+                            {navbar?.map((navlink: any) => {
                                 return (
                                     <a
                                         href={navlink.link.url}
@@ -84,7 +107,7 @@ export function HeaderDrawer({ blok }: { blok: HeaderStoryblok }) {
                     </section>
 
                     <DrawerFooter className="flex flex-col mt-0 justify-center items-center text-center gap-5">
-                        {drawerConfig?.links.map((linkBlok: any) => {
+                        {links?.map((linkBlok) => {
                             return (
                                 <a
                                     href={linkBlok.link.url}
@@ -102,7 +125,7 @@ export function HeaderDrawer({ blok }: { blok: HeaderStoryblok }) {
                             )
                         })}
                         <span className="text-primary font-secondary prose max-w-full [&_p]:mb-5 text-center w-1/2 lg:pb-0 text-subheading3 text-wrap">
-                            {drawerConfig?.copyright_text?.content.map(
+                            {copyright_text?.content?.map(
                                 (contentEntry: any, index: number) => {
                                     return contentEntry.content.map(
                                         (entry: any) => {

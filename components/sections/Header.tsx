@@ -1,31 +1,30 @@
 'use client'
 /* Contains the React component for Header Section */
 import Image from 'next/image'
-import type {
-    HeaderStoryblok,
-    AssetStoryblok,
-    HeaderDrawerStoryblok,
-} from '@sb/types'
 
 import { HeaderDrawer } from './HeaderDrawer'
 import React, { useState } from 'react'
 import { useMediaQuery } from '../hooks/useMediaQuery'
-import CoconutPrimaryLogo from '@/assets/coconut_logo.svg'
-import CoconutPrimaryLogoSymbol from '@/assets/coconut_logo_symbol.svg'
 import { storyblokEditable } from '@storyblok/react/rsc'
+import { NavLink, Richtext, Asset } from './types'
 
 type Props = React.AllHTMLAttributes<Element>
 
 interface HeaderProps extends Props {
     title?: string
-    logo?: AssetStoryblok
+    logo?: Asset
+    mobile_logo?: Asset
+    small_logo_icon?: Asset
 
-    small_logo_icon?: any
     show_small_icon?: boolean
 
-    mobile_logo?: any
-    blok: HeaderStoryblok
-    navbar?: HeaderStoryblok['navbar']
+    navbar?: NavLink[]
+
+    header_drawer_props: {
+        links?: NavLink[]
+        copyright_text?: Richtext
+        props?: any
+    }
 }
 
 export const Header = ({
@@ -35,10 +34,10 @@ export const Header = ({
     small_logo_icon,
     show_small_icon = true,
     mobile_logo,
-    blok,
+    header_drawer_props,
     ...props
 }: HeaderProps) => {
-    const navLinks = navbar ?? blok.navbar
+    const navLinks = navbar
     const isMobile = useMediaQuery('(max-width: 1023px)')
     const headerRef = React.useRef<HTMLDivElement>(null)
 
@@ -124,40 +123,22 @@ export const Header = ({
                             {/* Display small icon based on setting */}
                             {show_small_icon && (
                                 <div className="h-6 w-7 my-auto">
-                                    {solidHeader ? (
-                                        <Image
-                                            src={CoconutPrimaryLogoSymbol}
-                                            alt="Coconut Logo"
-                                            fill
-                                            className="h-auto w-auto object-cover !relative"
-                                        />
-                                    ) : (
-                                        <Image
-                                            src={small_logo_icon?.filename}
-                                            alt={small_logo_icon?.alt}
-                                            fill
-                                            className="h-auto w-auto object-cover !relative"
-                                        />
-                                    )}
+                                    <Image
+                                        src={small_logo_icon?.filename ?? ''}
+                                        alt={small_logo_icon?.alt ?? ''}
+                                        fill
+                                        className="h-auto w-auto object-cover !relative"
+                                    />
                                 </div>
                             )}
 
                             <div className="h-6 lg:block hidden relative w-[360px] my-auto">
-                                {solidHeader ? (
-                                    <Image
-                                        src={CoconutPrimaryLogo}
-                                        alt="Coconut Logo"
-                                        fill
-                                        className="h-auto w-auto object-cover !relative"
-                                    />
-                                ) : (
-                                    <Image
-                                        src={logo.filename!}
-                                        alt={logo.alt!}
-                                        fill
-                                        className="h-auto w-auto object-cover"
-                                    />
-                                )}
+                                <Image
+                                    src={logo.filename!}
+                                    alt={logo.alt!}
+                                    fill
+                                    className="h-auto w-auto object-cover"
+                                />
                             </div>
                         </a>
                         <a
@@ -165,21 +146,20 @@ export const Header = ({
                             aria-label="home"
                             className="flex bg-none lg:hidden relative w-[40px] aspect-[40/34] h-auto"
                         >
-                            <Image
-                                src={
-                                    solidHeader
-                                        ? CoconutPrimaryLogoSymbol
-                                        : mobile_logo.filename
-                                }
-                                alt={blok.mobile_logo.alt!}
-                                fill
-                                className="h-auto w-auto object-cover"
-                            />
+                            {mobile_logo && (
+                                <Image
+                                    src={mobile_logo.filename ?? ''}
+                                    alt={mobile_logo.alt ?? 'Mobile logo'}
+                                    fill
+                                    className="h-auto w-auto object-cover"
+                                />
+                            )}
                         </a>
                     </div>
                 ) : (
                     <div>{title}</div>
                 )}
+
                 <div className="lg:flex hidden items-center gap-9">
                     {navLinks?.map((nestedBlok) => (
                         <div
@@ -197,7 +177,13 @@ export const Header = ({
                     ))}
                 </div>
 
-                {isMobile && <HeaderDrawer blok={blok} />}
+                {isMobile && (
+                    <HeaderDrawer
+                        navbar={navbar}
+                        links={header_drawer_props?.links}
+                        copyright_text={header_drawer_props?.copyright_text}
+                    />
+                )}
             </div>
         </div>
     )

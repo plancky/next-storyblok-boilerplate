@@ -16,6 +16,7 @@ async function pull(sep = true) {
 
 async function generate() {
     const fileNames = (await readdir(BLOKS_DIR))
+        .filter((fn) => !fn.includes('preset'))
         .map((fn) => join(BLOKS_DIR, fn))
         .join(',') // returns a JS array of just short/local paths.
     const { stdout, stderr } = await $`
