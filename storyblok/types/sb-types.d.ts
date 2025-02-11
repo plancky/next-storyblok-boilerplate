@@ -612,12 +612,14 @@ export interface PortfolioImageWithTextStoryblok {
 }
 
 export interface HeaderStoryblok {
+  mobile_settings?: any;
+  mobile_logo: AssetStoryblok;
   title?: string;
   logo?: AssetStoryblok;
-  small_logo_icon?: AssetStoryblok;
-  show_small_icon?: boolean;
-  mobile_logo: AssetStoryblok;
+  icon_logo?: AssetStoryblok;
+  show_icon_logo?: boolean;
   navbar?: NavLinkStoryblok[];
+  enable_drawer?: boolean;
   drawer: HeaderDrawerStoryblok[];
   component: "header";
   _uid: string;

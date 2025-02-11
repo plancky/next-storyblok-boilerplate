@@ -1,10 +1,4 @@
 import Image from 'next/image'
-import type {
-    HeaderStoryblok,
-    AssetStoryblok,
-    HeaderDrawerStoryblok,
-} from '@sb/types'
-
 import {
     Drawer,
     DrawerClose,
@@ -20,27 +14,29 @@ import IconClose from '../icons/IconClose'
 import { storyblokEditable } from '@storyblok/react/rsc'
 
 type Props = React.AllHTMLAttributes<Element>
-import { NavLink, Richtext } from './types'
+import { NavLink, Richtext, Asset } from './types'
 
 interface HeaderDrawerProps extends Props {
+    // Title of the header (displayed when logos are missing)
     title?: string
-    logo?: AssetStoryblok
-    mobile_logo?: AssetStoryblok
-    small_logo_icon?: AssetStoryblok
-
-    show_small_icon?: boolean
-
+    // Logos to be inserted in the header
+    logos: {
+        logo?: Asset
+        mobile_logo?: Asset
+        icon_logo?: Asset
+        show_icon_logo?: boolean
+    }
+    // Navigation links
     navbar?: NavLink[]
+    // Additional links specific to the drawer
     links?: NavLink[]
+    // Text displayed next to the copyright symbol
     copyright_text?: Richtext
 }
 
 export function HeaderDrawer({
     title,
-    logo,
-    small_logo_icon,
-    show_small_icon,
-    mobile_logo,
+    logos: { icon_logo, show_icon_logo, mobile_logo },
     navbar,
     links,
     copyright_text,

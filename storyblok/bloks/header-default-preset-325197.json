@@ -1,71 +1,71 @@
 {
-  "id": 2474436,
-  "name": "default preset",
-  "preset": {
-    "_uid": "5945d77d-3f33-4102-b0b5-f3461bb749df",
-    "logo": {
-      "id": null,
-      "alt": null,
-      "name": "",
-      "focus": null,
-      "title": null,
-      "source": null,
-      "filename": "",
-      "copyright": null,
-      "fieldtype": "asset",
-      "meta_data": {}
-    },
-    "title": "SOZO",
-    "drawer": [
-      {
-        "_uid": "4996cfce-74b5-4096-93db-339621d06b82",
-        "links": [],
-        "component": "header-drawer",
-        "copyright_text": {
-          "type": "doc",
-          "content": [
+    "id": 2474436,
+    "name": "default-preset",
+    "preset": {
+        "_uid": "5945d77d-3f33-4102-b0b5-f3461bb749df",
+        "logo": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
+        },
+        "title": "SOZO",
+        "drawer": [
             {
-              "type": "paragraph"
+                "_uid": "4996cfce-74b5-4096-93db-339621d06b82",
+                "links": [],
+                "component": "header-drawer",
+                "copyright_text": {
+                    "type": "doc",
+                    "content": [
+                        {
+                            "type": "paragraph"
+                        }
+                    ]
+                }
             }
-          ]
+        ],
+        "navbar": [],
+        "component": "header",
+        "mobile_logo": {
+            "id": 20749083,
+            "alt": "",
+            "name": "",
+            "focus": "",
+            "title": "",
+            "source": "",
+            "filename": "https://a.storyblok.com/f/325197/2048x2048/84c129adbf/sozo_inspo.jpeg",
+            "copyright": "",
+            "fieldtype": "asset",
+            "meta_data": {},
+            "is_external_url": false
+        },
+        "show_icon_logo": false,
+        "icon_logo": {
+            "id": null,
+            "alt": null,
+            "name": "",
+            "focus": null,
+            "title": null,
+            "source": null,
+            "filename": "",
+            "copyright": null,
+            "fieldtype": "asset",
+            "meta_data": {}
         }
-      }
-    ],
-    "navbar": [],
-    "component": "header",
-    "mobile_logo": {
-      "id": 20749083,
-      "alt": "",
-      "name": "",
-      "focus": "",
-      "title": "",
-      "source": "",
-      "filename": "https://a.storyblok.com/f/325197/2048x2048/84c129adbf/sozo_inspo.jpeg",
-      "copyright": "",
-      "fieldtype": "asset",
-      "meta_data": {},
-      "is_external_url": false
     },
-    "show_small_icon": false,
-    "small_logo_icon": {
-      "id": null,
-      "alt": null,
-      "name": "",
-      "focus": null,
-      "title": null,
-      "source": null,
-      "filename": "",
-      "copyright": null,
-      "fieldtype": "asset",
-      "meta_data": {}
-    }
-  },
-  "component_id": 6936498,
-  "space_id": 325197,
-  "created_at": "2025-02-11T11:01:04.751Z",
-  "updated_at": "2025-02-11T11:07:51.967Z",
-  "image": "",
-  "color": "#1a1f36",
-  "icon": "block-block",
-  "description": ""
+    "component_id": 6936498,
+    "space_id": 325197,
+    "created_at": "2025-02-11T11:01:04.751Z",
+    "updated_at": "2025-02-11T11:08:35.209Z",
+    "image": "",
+    "color": "#1a1f36",
+    "icon": "block-block",
+    "description": ""
 }

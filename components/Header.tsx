@@ -101,7 +101,7 @@ const Header = ({ blok }: { blok: any }) => {
                             className="hidden bg-none lg:flex gap-[14px]"
                         >
                             {/* Display small icon based on setting */}
-                            {blok?.show_small_icon && (
+                            {blok?.show_icon_logo && (
                                 <div className="h-6 w-7 my-auto">
                                     {solidHeader ? (
                                         <Image
@@ -112,10 +112,8 @@ const Header = ({ blok }: { blok: any }) => {
                                         />
                                     ) : (
                                         <Image
-                                            src={
-                                                blok?.small_logo_icon?.filename
-                                            }
-                                            alt={blok?.small_logo_icon?.alt}
+                                            src={blok?.icon_logo?.filename}
+                                            alt={blok?.icon_logo?.alt}
                                             fill
                                             className="h-auto w-auto object-cover !relative"
                                         />

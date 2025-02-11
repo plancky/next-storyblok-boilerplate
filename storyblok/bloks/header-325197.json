@@ -3,43 +3,22 @@
   "display_name": "Header",
   "description": null,
   "created_at": "2025-02-10T14:20:37.061Z",
-  "updated_at": "2025-02-11T10:57:19.647Z",
+  "updated_at": "2025-02-11T15:40:11.124Z",
   "id": 6936498,
   "schema": {
-    "title": {
-      "type": "text",
+    "mobile_settings": {
+      "type": "section",
       "pos": 0,
-      "key": "title",
-      "display_name": "Title",
-      "description": "The main heading displayed in the website's header area. Hidden if the logo is provided.",
-      "id": "kTBtqlq2TGyp_WoRlS6qlg"
-    },
-    "logo": {
-      "type": "asset",
-      "pos": 1,
-      "required": false,
-      "filetypes": [
-        "images"
+      "keys": [
+        "mobile_logo",
+        "enable_drawer",
+        "drawer"
       ],
-      "description": "Text Logo for header",
-      "id": "z_1NyVtYTByW-HRyIQAnfw"
-    },
-    "small_logo_icon": {
-      "type": "asset",
-      "pos": 2,
-      "description": "Icon logo for the header",
-      "id": "_-5pqiVOQzaASX418WAyCQ"
-    },
-    "show_small_icon": {
-      "type": "boolean",
-      "pos": 3,
-      "display_name": "Show Logo Icon",
-      "description": "Enable to display the above logo icon in header",
-      "id": "kTSSoCQSTNmn32JWMF8UIA"
+      "id": "qhcEQRoTQz6ZfovYKsemJQ"
     },
     "mobile_logo": {
       "type": "asset",
-      "pos": 4,
+      "pos": 1,
       "required": true,
       "filetypes": [
         "images"
@@ -47,9 +26,40 @@
       "description": "Header logo for mobile-tablet devices",
       "id": "kjkvdfUgQWuKIBKqudu6DA"
     },
+    "title": {
+      "type": "text",
+      "pos": 2,
+      "key": "title",
+      "display_name": "Title",
+      "description": "The main heading displayed in the website's header area. Hidden if the logo is provided.",
+      "id": "kTBtqlq2TGyp_WoRlS6qlg"
+    },
+    "logo": {
+      "type": "asset",
+      "pos": 3,
+      "required": false,
+      "filetypes": [
+        "images"
+      ],
+      "description": "Text Logo for the header",
+      "id": "z_1NyVtYTByW-HRyIQAnfw"
+    },
+    "icon_logo": {
+      "type": "asset",
+      "pos": 4,
+      "description": "Icon logo for the header. (next to the text logo)",
+      "id": "_-5pqiVOQzaASX418WAyCQ"
+    },
+    "show_icon_logo": {
+      "type": "boolean",
+      "pos": 5,
+      "display_name": "Show Icon Logo",
+      "description": "Enable to display the above icon logo in header",
+      "id": "kTSSoCQSTNmn32JWMF8UIA"
+    },
     "navbar": {
       "type": "bloks",
-      "pos": 5,
+      "pos": 6,
       "display_name": "Navbar",
       "key": "Navbar",
       "description": "Group of navigation links in header",
@@ -60,9 +70,16 @@
         "NavLink"
       ]
     },
+    "enable_drawer": {
+      "type": "boolean",
+      "pos": 7,
+      "display_name": "Enable Header Drawer",
+      "description": "Enable Header drawer on mobile devices",
+      "id": "kTSSoCQSTNmn32JWMF8UIA"
+    },
     "drawer": {
       "type": "bloks",
-      "pos": 6,
+      "pos": 8,
       "maximum": 1,
       "required": true,
       "description": "Header Drawer for the mobile devices",
@@ -82,7 +99,7 @@
   "all_presets": [
     {
       "id": 2474436,
-      "name": "default preset",
+      "name": "default-preset",
       "component_id": 6936498,
       "image": "",
       "icon": "block-block",

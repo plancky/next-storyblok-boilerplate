@@ -11,15 +11,18 @@ import { NavLink, Richtext, Asset } from './types'
 type Props = React.AllHTMLAttributes<Element>
 
 interface HeaderProps extends Props {
+    // Title of the header (displayed when logos are missing)
     title?: string
-    logo?: Asset
-    mobile_logo?: Asset
-    small_logo_icon?: Asset
-
-    show_small_icon?: boolean
-
+    // Logos to be inserted in the header
+    logos: {
+        logo?: Asset
+        mobile_logo?: Asset
+        icon_logo?: Asset
+        show_icon_logo?: boolean
+    }
+    // Navigation links
     navbar?: NavLink[]
-
+    // Drawer specific props, they are passed to the HeaderDrawer component
     header_drawer_props: {
         links?: NavLink[]
         copyright_text?: Richtext
@@ -29,17 +32,15 @@ interface HeaderProps extends Props {
 
 export const Header = ({
     title,
-    logo,
+    logos,
     navbar,
-    small_logo_icon,
-    show_small_icon = true,
-    mobile_logo,
     header_drawer_props,
     ...props
 }: HeaderProps) => {
     const navLinks = navbar
     const isMobile = useMediaQuery('(max-width: 1023px)')
     const headerRef = React.useRef<HTMLDivElement>(null)
+    const { logo, icon_logo, mobile_logo, show_icon_logo } = logos
 
     const [solidHeader, setSolidHeader] = useState(false)
 
@@ -121,11 +122,11 @@ export const Header = ({
                             className="hidden bg-none lg:flex gap-[14px]"
                         >
                             {/* Display small icon based on setting */}
-                            {show_small_icon && (
+                            {show_icon_logo && (
                                 <div className="h-6 w-7 my-auto">
                                     <Image
-                                        src={small_logo_icon?.filename ?? ''}
-                                        alt={small_logo_icon?.alt ?? ''}
+                                        src={icon_logo?.filename ?? ''}
+                                        alt={icon_logo?.alt ?? ''}
                                         fill
                                         className="h-auto w-auto object-cover !relative"
                                     />
@@ -179,6 +180,7 @@ export const Header = ({
 
                 {isMobile && (
                     <HeaderDrawer
+                        logos={logos}
                         navbar={navbar}
                         links={header_drawer_props?.links}
                         copyright_text={header_drawer_props?.copyright_text}
