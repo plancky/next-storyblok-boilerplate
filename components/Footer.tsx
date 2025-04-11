@@ -5,8 +5,6 @@ import { FooterSecondary } from './FooterSecondary'
 import { richTextResolver } from '@storyblok/richtext'
 import React from 'react'
 import { useEffect, useState } from 'react'
-import CoconutLogo from '@/assets/footer_coconut_logo.svg'
-import DesktopCoconutLogo from '@/assets/coconut_footer_logo.svg'
 
 const { render: renderHtmlString } = richTextResolver()
 const secondaryFooterSlugs = ['/portfolio']
@@ -43,7 +41,7 @@ const Footer = ({ blok }: { blok: any }) => {
                                 <div className="h-6 lg:block justify-self-start hidden relative w-[400px]">
                                     {solidFooter ? (
                                         <Image
-                                            src={DesktopCoconutLogo}
+                                            src={''}
                                             alt="Footer Logo"
                                             fill
                                             className="h-auto w-auto object-cover"
@@ -60,7 +58,7 @@ const Footer = ({ blok }: { blok: any }) => {
                                 <div className="flex lg:hidden relative w-[176px] aspect-[176/120] h-auto">
                                     {solidFooter ? (
                                         <Image
-                                            src={CoconutLogo}
+                                            src={''}
                                             alt={'Coconut Logo'}
                                             fill
                                             className="h-auto w-auto object-cover"

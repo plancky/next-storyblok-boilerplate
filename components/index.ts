@@ -1,6 +1,5 @@
 export { Page } from './Page'
 export { Post } from './Post'
-export { Header } from './Header'
 export { Footer } from './Footer'
 export { Global } from './Global'
 export { MainHero } from './MainHero'

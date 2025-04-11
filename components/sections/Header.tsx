@@ -30,6 +30,7 @@ interface HeaderProps extends Props {
     }
 }
 
+const secondaryHeaderSlugs = ['^/blog/']
 export const Header = ({
     title,
     logos,
@@ -44,7 +45,6 @@ export const Header = ({
 
     const [solidHeader, setSolidHeader] = useState(false)
 
-    /*
     React.useEffect(() => {
         const slug = location.pathname
         const mainHero = document.getElementById('main-hero-section')
@@ -100,8 +100,6 @@ export const Header = ({
             }
         }
     }, [])
-
-    */
 
     return (
         <div
